@@ -1,0 +1,380 @@
+/* css used for the whole website except header and footer */
+
+body 
+{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(168, 168, 168);
+    position: relative;
+}
+
+.content
+{
+    padding-bottom: 40px;
+}
+
+.page-title
+{
+    text-align: center;
+}
+
+.form-div form 
+{
+    background-color: white;
+    padding:10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    border-radius: 20px;
+    text-align: center;
+    border: 3px #333 solid;
+}
+
+#register-form input, #login-form input, .account-form input
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;
+}
+
+#register-form input:focus, #login-form input:focus, .account-form input:focus
+{
+    outline: none;
+    border-bottom: 4px solid red;
+}
+
+#register-form button, #register-form input[type=submit], #login-form button, .account-form button
+{
+    background-color: #636363;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#register-form button:hover, #login-form button:hover, .account-form button:hover
+{
+    background-color: #3d3d3d;
+
+}
+
+
+#checkbox-remember
+{
+    margin-bottom: 10px;
+}
+
+/* textarea 
+{
+    vertical-align: top;
+} */
+
+.session-alert
+{
+    background-color: rgb(59, 59, 59);
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 40%;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    border: 3px #333 solid;
+}
+
+.alert
+{
+    background-color: rgb(235, 114, 114);
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 75%;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    border: 3px #333 solid;
+}
+
+.alert p
+{
+    margin-top: 0px;
+}
+
+#assemblyUp
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+#picContainer
+{
+    width: 30vw;
+    height: 30vw;
+    margin: 10vh;
+    border: 5px #333 solid;
+}
+
+#videoFeed
+{
+    width: 30vw;
+    height: 30vw;
+    background-color: #666;
+    z-index: 1;
+    /* margin-top: -30vw; */
+    /* position: absolute; */
+}
+
+/* #canvas
+{
+    width: 30vw;
+    height: 30vw;
+    z-index: 3;
+} */
+
+#filterContainer
+{
+    height: 70vh;
+    width: 150px;
+    border: 5px rgb(252, 94, 2) solid;
+    background-color: rgb(218, 136, 106);
+    border-radius: 10px;
+}
+
+#assemblyUp h5
+{
+    margin: 1vh;
+    text-align: center;
+}
+
+#picResultZone
+{
+    width: 150px;
+    height: 70vh;
+    border: 5px rgb(173, 1, 1) solid;
+    background-color: rgb(206, 94, 94);
+    border-radius: 10px;
+}
+
+#picResults
+{
+    width: 118px;
+    height: 65vh;
+    margin-left: 25px;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.assemblyResultImage
+{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+
+.deleteImageButton
+{
+    float: right;
+    position: relative;
+}
+
+#outputImage
+{
+    width: 30vw;
+    height: 30vw;
+    background-color: #666;
+}
+
+
+#picUp
+{
+    margin: 5px auto;
+    margin-top: 10px;
+    margin-left: 0;
+    width: 30vw;
+    background-color: #09235e; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#picUp:hover
+{
+    background: rgb(3, 3, 247);
+    color: rgb(229, 255, 0);
+}
+
+#filters
+{
+    width: 140px;
+    height: 65vh;
+    margin-left: 10px;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.filterClass
+{
+    width: 110px;
+    margin-top: 10px;
+    overflow: scroll;
+}
+
+.filterClass:hover
+{
+    width: 120px;
+}
+
+#positionnedFilter
+{
+    width: 30vw;
+    height: 30vw;
+    /* margin-bottom: -200px; */
+    margin-top: -30vw;
+    /* margin-left: 90px; */
+    /* position: absolute; */
+    z-index: 2;
+}
+
+#galleryZone
+{
+    /* background-color: olive; */
+    /* height: 80%; */
+    margin: 20px;
+}
+
+.galleryBox
+{
+    background-color: wheat;
+    height: 30vw;
+    margin: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.galleryPic
+{
+    height: 25vw;
+    width: 25vw;
+    margin: 2.5vw;
+}
+
+.galleryInfoBox
+{
+    background-color: peru;
+    margin: auto;
+    height: 27vw;
+    width: 55vw;
+    border-radius: 40px;
+    text-align: center;
+    
+}
+
+.commentBox
+{
+    background-color: wheat;
+    margin: auto;
+    height: 15vw;
+    width: 45vw;
+    border-radius: 10px;
+    border: 2px dimgray solid ;
+    overflow-y: auto;
+}
+
+.commentBoxTitle
+{
+    margin: 2px;
+}
+
+.galleryInfoBox p
+{
+    margin: 5px;
+}
+
+.thumbUp
+{
+    height: 22px;
+    width: 40px;
+    padding: 0px;
+    margin: 5px;
+    background-image: url("/../filters/thumbUp.png");
+}
+
+.thumbForm
+{
+    height: 20px;
+}
+
+.thumbPic
+{
+    height: 15px;
+    margin: 0px;
+}
+
+.commentTextBar
+{
+    width: 34vw;
+    margin: 5px;
+}
+
+.commentPseudo
+{
+    font-style: italic;
+    font-size: 12px;
+}
+
+.commentComment
+{
+    margin-bottom: 10px;
+}
+
+#paginationButtons
+{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.pageLink {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color .3s;
+}
+
+.pageLinkActive {
+    background-color: #ff3300;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pageLink:hover
+{
+    background-color: rgb(187, 187, 187);
+}
+
+#index-page
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}

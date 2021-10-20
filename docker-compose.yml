@@ -1,0 +1,36 @@
+version: '3.6'
+
+services:
+  db:
+    image: mysql:latest
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: e9w86036f78sd9
+
+  db_pma:
+    image: phpmyadmin/phpmyadmin:latest
+    depends_on:
+    - db
+    ports:
+    - 8080:80
+    environment:
+      MYSQL_ROOT_PASSWORD: e9w86036f78sd9
+      PMA_USER: root
+      PMA_PASSWORD: e9w86036f78sd9
+
+  mail:
+    image: mailhog/mailhog:v1.0.0
+    restart: always
+    ports:
+    - 8025:8025
+    - 1025:1025
+
+  www:
+    depends_on:
+    - db
+    - mail
+    image: llslim/docker-apache-php
+    volumes:
+    - ./files:/var/www/html
+    ports:
+    - 80:80
