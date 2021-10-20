@@ -17,10 +17,10 @@ Then it's time to clone this repository, open a command prompt and go to said re
 Here, you just need to write the following command : (sudo) docker-compose up. 
 Some downloads may occur, this is necessary to build and launch all the containers.
 
-When this is done, you can go to the following adress in your browser of choice : 127.0.0.1:80 Et voilà ! 
+When this is done, you can go to the following adress in your browser of choice : http://127.0.0.1:80 Et voilà ! 
 
 Note that the emails sent by the website are sent directly to MailHog, one of the container used for this project. 
-You can access the emails by going to this adress : 127.0.0.1:8025.
+You can access the emails by going to this adress : http://127.0.0.1:8025.
 
 Also, in order to have a full view of what's happening in the database, phpmyadmin is also one of the container.
-You can acess it with the adress : 127.0.0.1:8080.
+You can acess it with the adress : http://127.0.0.1:8080.
